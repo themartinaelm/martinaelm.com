@@ -1,0 +1,130 @@
+@font-face {
+  font-family: 'Canterbury';
+  src: url('canterbury.ttf');
+}
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,body {
+    cursor: url(furby.gif), auto;
+}
+body {
+    background: #fcfefc;
+    font-family: "Arial";
+    font-size: 16px;
+}
+
+.container {
+    max-width: 765px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 16px;
+    box-sizing: content-box;
+    padding-top: 80px;
+}
+body.page-index .container {
+    padding-top: 200px;
+}
+
+.logo {
+    display: block;
+    background: url(logo.gif);
+    background-size: 100%;
+    /*width: 946px;
+    height: 143px;*/
+    width: 106%;
+    padding-bottom: 15.12%;
+    margin-bottom: 60px;
+    position: relative;
+    left: -6px;
+    border: none;
+}
+
+
+.menu {
+    overflow: hidden;
+    margin-bottom: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -moz-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+.menu li {
+    margin-bottom: 10px;
+    -webkit-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+}
+.menu li:last-child {
+    margin-right: 0
+}
+.menu a {
+    font-family: "Canterbury", "Arial", "Helvetica";
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.menu li.selected a {
+    border-bottom: 1px solid #333;
+}
+
+.content {
+    padding-bottom: 50px;
+    line-height: 1.5em;
+}
+.content h1 {
+    font-family: "Canterbury", "Arial", "Helvetica";
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 16px;
+}
+.content p {
+    margin-bottom: 16px;
+}
+.content ol, .content ul, .content table {
+    margin-bottom: 30px;
+}
+.content li {
+    margin-bottom: 8px;
+}
+.content img {
+    max-width: 100%;
+}
+.content td {
+    padding: 2px;
+    padding-right: 16px;
+}
+.content td:last-child {
+    padding-right: 0px;
+}
+.content iframe {
+    max-width: 100%;
+}
+
+
+@media (max-width: 767px) {
+    .container {
+        padding-top: 20px;
+    }
+    body.page-index .container {
+        padding-top: 60px;
+    }
+    .menu {
+        -moz-box-direction: column;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+}
