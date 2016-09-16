@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page.title }} - {{ super() }}{% endblock %}
+
+{% block body_class %}page page-{{ page.slug }}{% endblock %}
+
+{% block content %}
+  {{ page.content }}
+{% endblock %}

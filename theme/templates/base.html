@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}Martina Elm{% endblock %}</title>
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/reset.css" />
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/{{ CSS_FILE }}" />
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,600' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body class="{% block body_class %}{% endblock %}">
+    <div class="container">
+      <a href="/" class="logo"></a>
+      <ul class="menu">
+        {% for menu_page in pages|sort(attribute='sortorder') %}
+          {% if menu_page.slug == "instagram" %}
+            <li><a href="https://www.instagram.com/martinaelm/" target="_blank">{{ menu_page.title }}
+          {% else %}
+            <li{% if page and menu_page.slug == page.slug %} class="selected"{% endif %}><a href="{{ menu_page.url }}">{{ menu_page.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+      <div class="content">
+        {% block content %}{% endblock %}
+      </div>
+    </div>
+    
+    {% block script %}
+      
+    {% endblock %}
+  </body>
+</html>
