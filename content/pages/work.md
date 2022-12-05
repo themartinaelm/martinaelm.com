@@ -4,7 +4,7 @@ sortorder: 2
 
 # Work Experience
 
-|
+<i></i> | <i></i>
 --- | ---
 2014 - present | Co-founder & CEO at Confetti
 2014 - present | Co-founder & organizer of Nordic.js
@@ -18,7 +18,7 @@ sortorder: 2
 
 # Education
 
-|
+<i></i> | <i></i>
 --- | ---
 2013 | UGL – Understanding Groups and Leadership
 2013 | Hyper Island Master Class

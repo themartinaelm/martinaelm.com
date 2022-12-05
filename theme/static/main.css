@@ -95,6 +95,9 @@ body.page-index .container {
 .content ol, .content ul, .content table {
     margin-bottom: 30px;
 }
+.content ol, .content ul, .content table thead th:empty {
+    display: none;
+}
 .content li {
     margin-bottom: 8px;
 }

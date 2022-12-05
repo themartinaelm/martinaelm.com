@@ -3,7 +3,7 @@ sortorder: 3
 
 # Speaking
 
-|
+<i></i> | <i></i>
 --- | ---
 2016 | Open Doors Stockholm: Listen to Kanye West every morning and other tips from Martina 
 2016 | She Says Stockholm: Panel about the Future of Work

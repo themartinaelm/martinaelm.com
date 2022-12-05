@@ -37,3 +37,4 @@ RELATIVE_URLS = True
 # Nice page urls
 PAGE_URL = '/{slug}'
 PAGE_SAVE_AS = '{slug}/index.html'
+
