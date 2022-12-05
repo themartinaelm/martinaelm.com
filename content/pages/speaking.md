@@ -10,7 +10,7 @@ sortorder: 3
 2016 | Tekla Festival: Quirkbot Workshop
 2016 | Women in Tech Conference: Learnings from a bootstrapped startup
 2015 | Hyper Island lecture: How to turn your idea into a business 
-2015 | Minc breakfast sessions: Listen to Kanye West every morning and other tips from Martina 
+2015 | Minc breakfast sessions 
 2015 | Hyper Island lecture: Unraveling Bootstrapping 
 2015 | Startup Day: Unraveling Bootstrapping
 
