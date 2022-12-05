@@ -1,7 +1,3 @@
-# Install requirements
-
-`pip install -r requirements.txt`
-
 # To publish:
 
-`make github`
+Push `master` branch and a Github Action should build and publish the site under the gh-pages branch.
