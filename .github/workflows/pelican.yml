@@ -16,6 +16,6 @@ jobs:
     - uses: nelsonjchen/gh-pages-pelican-action@0.1.10
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        PELICAN_CONTENT_FOLDER: content
-        PELICAN_THEME_FOLDER: theme
+        PELICAN_CONTENT_FOLDER: ./content
+        PELICAN_THEME_FOLDER: ./theme
         GH_PAGES_CNAME: martinaelm.com
