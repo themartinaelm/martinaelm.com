@@ -38,3 +38,4 @@ RELATIVE_URLS = True
 PAGE_URL = '/{slug}'
 PAGE_SAVE_AS = '{slug}/index.html'
 
+THEME = "./theme/"
