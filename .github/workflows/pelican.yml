@@ -1,0 +1,21 @@
+name: Generate Pelican website and publish
+
+on:
+  # Trigger the workflow on push or pull request,
+  # but only for the master branch
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: nelsonjchen/gh-pages-pelican-action@0.1.10
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        PELICAN_CONTENT_FOLDER: content
+        PELICAN_THEME_FOLDER: theme
+        GH_PAGES_CNAME: martinaelm.com
